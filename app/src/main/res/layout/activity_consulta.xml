@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainConsulta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainConsulta">
+
+    <TextView
+        android:id="@+id/textGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General"
+        android:textSize="20sp"
+        android:textColor="#D12332"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"/>
+    <EditText
+        android:id="@+id/editRaza"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Raza"
+        android:inputType="text"
+        android:layout_below="@+id/editNombre"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/textGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Género"
+        android:textSize="20sp"
+        android:textColor="#D12332"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/editRaza"/>
+    <Spinner
+        android:id="@+id/spinnerGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editRaza"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>
